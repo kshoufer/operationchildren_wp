@@ -14,24 +14,43 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'operationchildren');
+/*added logic by Ken Shoufer*/
+if ($_SERVER['SERVER_NAME'] === "localhost") {
+    // ** MySQL settings - You can get this info from your web host ** //
+    /** The name of the database for WordPress */
+    define('DB_NAME', 'operationchildren');
+    /** MySQL database username */
+    define('DB_USER', 'root');
+    /** MySQL database password */
+    define('DB_PASSWORD', '');
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+    /** Database Charset to use in creating database tables. */
+    define('DB_CHARSET', 'utf8');
+    /** The Database Collate type. Don't change this if in doubt. */
+    define('DB_COLLATE', '');
+    define('WP_HOME','http://localhost:/operationchildren');
+    define('WP_SITEURL','http://localhost:/operationchildren');
+} else {
+    // ** MySQL settings - You can get this info from your web host ** //
+    /** The name of the database for WordPress */
+    define('DB_NAME', 'backcou2_operationchildren');
+    /** MySQL database username */
+    define('DB_USER', 'backcou2_bcr');
+    /** MySQL database password */
+    define('DB_PASSWORD', 'tR(SW28(P1');
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+    /** Database Charset to use in creating database tables. */
+    define('DB_CHARSET', 'utf8');
+    /** The Database Collate type. Don't change this if in doubt. */
+    define('DB_COLLATE', '');
+    define('WP_HOME','http://dev1.ken-shoufer.com/operationchildren');
+    define('WP_SITEURL','http://dev1.ken-shoufer.com/operationchildren');
+};
+/*end added logic*/
 
-/** MySQL database username */
-define('DB_USER', 'root');
 
-/** MySQL database password */
-define('DB_PASSWORD', '');
-
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
