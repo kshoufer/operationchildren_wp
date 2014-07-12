@@ -71,30 +71,11 @@
 			?>
 			</nav>
 
-			<div id="et-social-icons">
-			<?php
-				$social_icons = array();
-
-				if ( 'on' == et_get_option( 'fable_show_google_icon', 'on' ) ) $social_icons['google'] = array( 'image' => $template_directory_uri . '/images/google.png', 'url' => et_get_option( 'fable_google_url' ), 'alt' => __( 'Google Plus', 'Fable' ) );
-				if ( 'on' == et_get_option( 'fable_show_facebook_icon','on' ) ) $social_icons['facebook'] = array( 'image' => $template_directory_uri . '/images/facebook.png', 'url' => et_get_option( 'fable_facebook_url' ), 'alt' => __( 'Facebook', 'Fable' ) );
-				if ( 'on' == et_get_option( 'fable_show_twitter_icon', 'on' ) ) $social_icons['twitter'] = array( 'image' => $template_directory_uri . '/images/twitter.png', 'url' => et_get_option( 'fable_twitter_url' ), 'alt' => __( 'Twitter', 'Fable' ) );
-
-				$social_icons = apply_filters( 'et_social_icons', $social_icons );
-
-				if ( ! empty( $social_icons ) ) {
-					foreach ( $social_icons as $icon ) {
-						if ( $icon['url'] )
-							printf( '<a href="%s" target="_blank"><img src="%s" alt="%s" /></a>', esc_url( $icon['url'] ), esc_attr( $icon['image'] ), esc_attr( $icon['alt'] ) );
-					}
-				}
-			?>
-
-			</div> <!-- #et-social-icons -->
 
 			<?php do_action( 'et_header_top' ); ?>
 
 		</div> <!-- .container -->
 
-		<?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( '9' ); ?>
+<?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( '9' ); ?>		
 
 	</header> <!-- #main-header -->

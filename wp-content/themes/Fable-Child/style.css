@@ -6,3 +6,7 @@ Template: Fable
 
 @import url(../Fable/style.css);
 
+.hentry, .entry {
+	display: none;
+}
+

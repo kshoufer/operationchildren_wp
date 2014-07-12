@@ -1,0 +1,10 @@
+/*
+Theme Name: Flexible Child
+Author: Ken Shoufer
+Template: Flexible
+*/
+
+@import url(../Flexible/style.css);
+
+
+#top-container { text-align: left; margin: 0 auto; width: 960px; position: relative; }

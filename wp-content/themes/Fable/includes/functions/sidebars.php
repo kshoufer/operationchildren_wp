@@ -26,5 +26,7 @@ function et_widgets_init() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	) );
+
+
 }
 add_action( 'widgets_init', 'et_widgets_init' );

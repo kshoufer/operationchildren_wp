@@ -27,4 +27,5 @@ Template Name: Home Page
 
 <?php endwhile; ?>
 
+
 <?php get_footer(); ?>
