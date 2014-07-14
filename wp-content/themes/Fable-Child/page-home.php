@@ -28,4 +28,7 @@ Template Name: Home Page
 <?php endwhile; ?>
 
 
+<?php $template_directory_uri =  get_stylesheet_directory_uri(); ?>
+
+
 <?php get_footer(); ?>

@@ -40,7 +40,7 @@
 		<?php
 			$logo = ( $user_logo = et_get_option( 'fable_logo' ) ) && '' != $user_logo
 				? $user_logo
-				: $template_directory_uri . '/images/logo.png';
+				: $template_directory_uri . '/images/logo(cropped).svg';
 		?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
